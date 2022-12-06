@@ -67,7 +67,7 @@ if ($hora < 6) {
 											<div class="row">
 												<div class="col-md-6 col-12">
 													<div class="form-group">
-														<label for="first-name-column">Nombre Plato</label>
+														<label for="first-name-column">Nombre Producto</label>
 														<input type="text" class="form-control" id="nombreplato" name="nombreplato" value="" >
 													</div>
 												</div>
@@ -85,7 +85,7 @@ if ($hora < 6) {
 												</div>
 												<div class="col-md-6 col-12">
 													<div class="form-group">
-														<label for="first-name-column">Mesero</label>
+														<label for="first-name-column">Categoría</label>
 														<select class="form-select" name="categoria" id="role">
 															<?php
 															$obtenerTodo = obtenerTodo('categorias_menu');
@@ -151,8 +151,8 @@ if ($hora < 6) {
 				echo "<script>
 				Swal.fire({
 					icon: 'success',
-					title: '¡Plato Creado!',
-					text: 'La mesa se ha creado correctamente',
+					title: 'Producto Creado!',
+					text: 'El Producto se ha creado correctamente',
 					position: 'center',
 					showConfirmButton: true
 				}).then(function () {

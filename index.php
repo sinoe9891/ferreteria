@@ -318,7 +318,7 @@ if ($hora < 6) {
 												$idplato = $solicitud['id'];
 												$nombre = $solicitud['nombre'];
 											?>
-												<option value=""><?php echo $nombre?></option>
+												<option value=""><?php echo $nombre ?></option>
 											<?php
 											};
 											?>
@@ -328,7 +328,7 @@ if ($hora < 6) {
 								</div>
 								<div class="col-md-6">
 									<div class="form-floating">
-									<input type="number" class="form-control" id="cantidadproducto" placeholder="10">
+										<input type="number" class="form-control" id="cantidadproducto" placeholder="10">
 										<label for="select1">Cantidad</label>
 									</div>
 								</div>
@@ -348,52 +348,9 @@ if ($hora < 6) {
 			</div>
 		</div>
 		<!-- Service Start -->
-		<div class="container-xxl py-5">
-			<div class="container">
-				<div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-					<h5 class="section-title ff-secondary text-center text-primary fw-normal">Ofrecemos</h5>
-					<h1 class="mb-5">Nuestros Servicios</h1>
-				</div>
-				<div class="row g-4">
-					<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="service-item rounded pt-3">
-							<div class="p-4">
-								<i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
-								<h5>Proveedores de calidad </h5>
-								<p>Tenemos los mejores productos de área, buscamos ser la primer empresa en tener proveedores exclusivos</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-						<div class="service-item rounded pt-3">
-							<div class="p-4">
-								<i class="fa fa-3x fa-utensils text-primary mb-4"></i>
-								<h5>Innovación </h5>
-								<p>Siempre nos mantenemos a la vanguardia y tratamos de ser eficacez y innovadores</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-						<div class="service-item rounded pt-3">
-							<div class="p-4">
-								<i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
-								<h5>Compras en Línea</h5>
-								<p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-						<div class="service-item rounded pt-3">
-							<div class="p-4">
-								<i class="fa fa-3x fa-headset text-primary mb-4"></i>
-								<h5>Servicio 24/7</h5>
-								<p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php
+		include 'inc/templates/servicios.php';
+		?>
 		<!-- Service End -->
 
 		<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -416,65 +373,7 @@ if ($hora < 6) {
 
 		<?php
 		include 'inc/templates/equipo.php';
-		?>
 
-
-		<!-- Testimonial Start -->
-		<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-			<div class="container">
-				<div class="text-center">
-					<h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonios</h5>
-					<h1 class="mb-5">Nuestro clientes!!!</h1>
-				</div>
-				<div class="owl-carousel testimonial-carousel">
-					<div class="testimonial-item bg-transparent border rounded p-4">
-						<i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-						<p>Como siempre, muy contento con Ferreterias Industriales, seriedad, eficacia y rapidez, muchas gracias, Felices Fiestas, Dios los Bendiga.</br></p>
-						<div class="d-flex align-items-center">
-							<img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
-							<div class="ps-3">
-								<h5 class="mb-1">Lourdes</h5>
-								<small>Abogado</small>
-							</div>
-						</div>
-					</div>
-					<div class="testimonial-item bg-transparent border rounded p-4">
-						<i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-						<p>El pedido llegó perfectamente, lo que había pedido sin problema ninguno y todo correcto!</p>
-						<div class="d-flex align-items-center">
-							<img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
-							<div class="ps-3">
-								<h5 class="mb-1">Carlos</h5>
-								<small>Arquitecto</small>
-							</div>
-						</div>
-					</div>
-					<div class="testimonial-item bg-transparent border rounded p-4">
-						<i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-						<p>Ha sido una experiencia estupenda, llegó a tiempo y en perfecto estado volveré a comprar.</p>
-						<div class="d-flex align-items-center">
-							<img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
-							<div class="ps-3">
-								<h5 class="mb-1">Diego</h5>
-								<small>Futbolista</small>
-							</div>
-						</div>
-					</div>
-					<div class="testimonial-item bg-transparent border rounded p-4">
-						<i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-						<p>Atención, precio y ambiente excelente.</br></br></p>
-						<div class="d-flex align-items-center">
-							<img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
-							<div class="ps-3">
-								<h5 class="mb-1">Blanca</h5>
-								<small>Diseñador Gráfico</small>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Testimonial End -->
-		<?php
+		include 'inc/templates/comentarios.php';
 		include 'inc/templates/footer.php';
 		?>
